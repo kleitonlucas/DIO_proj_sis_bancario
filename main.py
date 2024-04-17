@@ -156,21 +156,4 @@ def main():
         else:
             print('-- Operação inválida! Por favor, selecione uma opção desejada. --')
 
-# main()
-
-#TESTE
-clientes = []
-contas = []
-
-criar_cliente(clientes)
-criar_conta_corrente(len(contas) + 1, clientes, contas)
-listar_clientes(clientes)
-listar_contas(contas)
-depositar(clientes)
-exibir_extrato(clientes)
-sacar(clientes)
-sacar(clientes)
-sacar(clientes)
-exibir_extrato(clientes)
-sacar(clientes)
-exibir_extrato(clientes)
+main()
