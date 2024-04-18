@@ -66,7 +66,7 @@ def exibir_extrato(clientes):
 
             if transacoes:
                 for transacao in transacoes:
-                    extrato += f'''\n{transacao["tipo"]}:\n\tR$ {transacao["valor"]:.2f}'''
+                    extrato += f'\n{transacao["data"]}\n{transacao["tipo"]}:\n\tR$ {transacao["valor"]:.2f}'
             else:
                 extrato = 'Não foram realizadas movimentações.'
             print(extrato)
