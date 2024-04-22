@@ -14,4 +14,3 @@ class Saque(Transacao):
 
         if transacao_autorizada:
             conta.historico.adicionar_transacao(self)
-            

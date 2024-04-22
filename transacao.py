@@ -6,7 +6,7 @@ class Transacao(ABC):
     @abstractmethod
     def valor(self):
         pass
-    
+
     @abstractmethod
     def registrar(self, conta):
         pass

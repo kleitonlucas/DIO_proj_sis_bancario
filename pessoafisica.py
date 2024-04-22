@@ -9,9 +9,12 @@ class PessoaFisica(Cliente):
         self.data_nascimento = data_nascimento
 
     def __str__(self):
-        return f'''\
+        return f"""\
             CPF:\t\t\t{self.cpf}
             Nome:\t\t\t{self.nome}
             Data de Nascimento:\t{self.data_nascimento}
             Endereço:\t\t{self.endereco}
-        '''
+        """
+
+    def __repr__(self) -> str:
+        return f"<{self.__class__.__name__}: ({self.cpf})>"
